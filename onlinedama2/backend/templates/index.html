@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Online Dama - Giriş</title>
+  <style>
+    body { font-family: Arial; display: flex; flex-direction: column; align-items: center; padding-top: 50px; background-color: #f9f9f9; }
+    form { margin-bottom: 20px; border: 1px solid #ccc; padding: 20px; border-radius: 8px; background-color: white; }
+    input { display: block; margin: 10px 0; padding: 8px; width: 200px; }
+    h2 { text-align: center; }
+  </style>
+</head>
+<body>
+  <h1>Online Dama Oyunu</h1>
+
+  <form method="POST" action="/login">
+    <h2>Giriş Yap</h2>
+    <input type="text" name="username" placeholder="Kullanıcı Adı" required>
+    <input type="password" name="password" placeholder="Şifre" required>
+    <input type="submit" value="Giriş">
+  </form>
+
+  <form method="POST" action="/register">
+    <h2>Kayıt Ol</h2>
+    <input type="text" name="username" placeholder="Yeni Kullanıcı Adı" required>
+    <input type="password" name="password" placeholder="Şifre" required>
+    <input type="submit" value="Kayıt Ol">
+  </form>
+</body>
+</html>

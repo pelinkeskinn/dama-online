@@ -1,0 +1,43 @@
+.cell {
+    box-sizing: border-box;
+    border: 1px solid #555;
+  }
+  
+  .light {
+    background-color: #f0d9b5;
+  }
+  
+  .dark {
+    background-color: #b58863;
+  }
+  .piece {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10%;
+  }
+  
+  .red {
+    background-color: white;
+    border: 1px solid #888; /* beyaz zeminlerde daha iyi görünürlük için çerçeve */
+  }
+  
+  
+  .black {
+    background-color: black;
+  }
+  .piece.selected {
+    outline: 3px solid yellow;
+  }
+  .piece.queen::after {
+    content: "👑";
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    line-height: 0;
+    margin-top: -10px;
+    color: gold;
+    font-weight: bold;
+  }
+  
